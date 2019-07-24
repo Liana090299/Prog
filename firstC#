@@ -1,0 +1,23 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+void sum(int &x, int &y) {
+	if (x > 0) {
+		x--;
+		y++;
+		sum(x, y);
+	}
+	else {
+		cout << y;
+	}
+	
+		
+}
+
+int main()
+{
+	int a = 11;
+	int b = 20;
+	sum(a, b);
+}
